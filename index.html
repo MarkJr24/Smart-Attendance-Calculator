@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📊 Smart Attendance Calculator</h1>
+
+        <div class="input-group">
+            <label>Total Classes:</label>
+            <input type="number" id="totalClasses" placeholder="Enter total classes">
+        </div>
+
+        <div class="input-group">
+            <label>Classes Attended:</label>
+            <input type="number" id="attendedClasses" placeholder="Enter attended classes">
+        </div>
+
+        <div class="input-group">
+            <label>Future Classes (Prediction):</label>
+            <input type="number" id="futureClasses" placeholder="Enter upcoming classes">
+        </div>
+
+        <button onclick="calculateAttendance()">Calculate</button>
+
+        <div class="result" id="result"></div>
+        <div class="extra-info" id="extraInfo"></div>
+
+        <canvas id="attendanceChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
